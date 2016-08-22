@@ -2,8 +2,8 @@
   .banner_content
     %h1 File Cabinet
     %p Your life's work. Organized, always.
-    %button = "Delete", thing_path(@thing), method: :get
-
+    %button= link_to "Join Us", new_user_registration_path
+   
 #callouts
   .callout_inner
     .wrapper
