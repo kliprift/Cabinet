@@ -1,1 +1,19 @@
-%h1 This is HAML placeholder
+#banner
+  .banner_content
+    %h1 File Cabinet
+    %p Your life's work. Organized, always.
+    %button = "Delete", thing_path(@thing), method: :get
+
+#callouts
+  .callout_inner
+    .wrapper
+      .callout
+        %h2 Organize
+        %p File Cabinet is a social networking service. Until a rebranding in 2013, it was known as FileSpring, a question-and-answer-based social network launched in 2009 by Ade Olonoh, the founder of online form builder FileStack
+
+#bottom_cta
+  .wrapper
+    %h2 Go Ahead!
+    %br
+    %button= link_to "Join Now", new_user_registration_path
+
